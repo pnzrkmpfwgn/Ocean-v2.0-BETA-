@@ -1,0 +1,50 @@
+.card {
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 60px;
+  font-size: 20px;
+  color: rgb(15, 72, 110);
+}
+.btn {
+  font-size: 24px;
+  margin-top: 10px;
+  padding: 10px;
+  animation-delay: 1s;
+}
+#password {
+  margin-top: 10px;
+}
+
+.animation {
+  animation: animation 0.3s linear 1 forwards;
+  opacity: 0;
+}
+#label_username {
+  animation-delay: 0.1s;
+}
+#form1 {
+  animation-delay: 0.2s;
+}
+#label_email {
+  animation-delay: 0.3s;
+}
+#form2 {
+  animation-delay: 0.4s;
+}
+#label_password {
+  animation-delay: 0.5s;
+}
+#form3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes animation {
+  0% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,25 @@
+POST http://localhost:5000/api/users
+Content-Type:application/json
+
+{
+    "name":"asd",
+    "email":"asd@asd",
+    "password":"123456"
+}
+
+###
+POST http://localhost:5000/api/auth
+Content-Type: application/json
+
+{
+    "email":"ptest2@gmail.com",
+    "password":"123456"
+}
+
+###
+POST http://localhost:5000/api/post
+Content-Type:application/json
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY2NGQ0ZDk3MGNmNTAxMTljYzYyM2IyIn0sImlhdCI6MTYwMTI4ODY4NSwiZXhwIjoxNjAxNjQ4Njg1fQ.WKGatw_D_pBUQHZ3Wd7q6C1b_gEyV9GL8AMlLvVtQak
+{
+    "text":"hello World"
+}

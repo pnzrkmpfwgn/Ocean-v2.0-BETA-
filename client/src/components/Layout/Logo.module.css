@@ -1,0 +1,19 @@
+.logo {
+  height: 125px;
+  width: 125px;
+  margin-left: 5px;
+  float: left;
+  opacity: 0.3s;
+  animation: fadein 3s linear 1 forwards;
+  -webkit-filter: drop-shadow(1px 1px 1px #222222);
+  filter: drop-shadow(1px 1px 1px #222222);
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

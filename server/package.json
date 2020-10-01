@@ -1,0 +1,28 @@
+{
+  "name": "ocean-v2.0",
+  "version": "2.0.0",
+  "description": "A hub website for people who are volunteered to protect the ocean",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run cd ../client\""
+  },
+  "author": "Ülkü Ayberk Yiğit",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.5",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

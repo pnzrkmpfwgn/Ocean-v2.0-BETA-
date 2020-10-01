@@ -1,0 +1,54 @@
+.about_section {
+  background: #3586ff;
+  height: 40vh;
+  width: 100%;
+  border-bottom: 5px solid black;
+}
+
+.greeting {
+  padding-top: 100px;
+  margin-left: 10px;
+  font-size: 40px;
+  color: rgb(15, 51, 110);
+  text-shadow: 1px 1px #38393a;
+  animation: slidein 0.5s ease-in-out 1 forwards;
+  opacity: 0;
+}
+.paragraph {
+  font-size: 34px;
+  letter-spacing: 0.1;
+  margin-left: 10px;
+  color: rgb(15, 72, 110);
+  text-shadow: 1px 1px #38393a;
+  animation: slidein 0.5s ease-in-out 1 forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.special {
+  color: rgb(1, 35, 58);
+}
+
+.logout {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.logout:hover {
+  transform: scale(1.3);
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
